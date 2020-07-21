@@ -20,6 +20,13 @@ describe('Titre de la suite de test', () => {
         cy.get('#housingStatusFrom-input-month').type('09')
         cy.get('#housingStatusFrom-input-year').type('2015')
         cy.get('[data-di-id="di-id-298bd252-3e135a4"]').click()
+        cy.wait(1000)
+        cy.get('#activitySector-input').select('Indépendants / Travailleurs non salariés')
+        cy.get('#profession-input').select('Auto-Entrepreneur')
+        cy.get('#businessActivityStartDate-input-month').type('09')
+        cy.get('#businessActivityStartDate-input-year').type('2015')
+        cy.get('[type="radio"]').check('Non')
+        cy.get('[data-di-id="di-id-9058e932-af7a0aea"]').click()
        
     })
 
