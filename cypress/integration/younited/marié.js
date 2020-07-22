@@ -49,7 +49,7 @@ describe('Titre de la suite de test', () => {
         cy.get('#postalCode-input').type('3300')
         cy.get('[data-di-id="di-id-d4009be7-ee88df57"]').click()
         cy.wait(1000)
-        y.get('#lastName-input').type('0659860250')
+        cy.get('#lastName-input').type('0659860250')
         cy.get('#firstName-input').type('0759860250')
         cy.get('#address-input').type('adresse sympa et cool')
         cy.get('#postalCode-input').type('3300')
