@@ -36,7 +36,7 @@ describe('Titre de la suite de test', () => {
         cy.get('[data-di-id="di-id-182de712-89d40b16"]').click()
         cy.wait(1000)
         cy.get('#rentAmount-input').type('12000')
-        cy.get('custom-select').select('1')
+        cy.get('#loanCount-input').select('1')
         cy.get('type-input').select('Auto-Moto')
         cy.get('#loanAmount-input').type('400')
         cy.get('[data-di-id="di-id-d236d59f-ee88df57"]').click()
