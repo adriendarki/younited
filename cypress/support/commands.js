@@ -136,3 +136,5 @@ Cypress.Commands.add('insuranceUser', (insurance_subscribers) => {
 
 
 })
+import 'cypress-file-upload'
+require('cypress-downloadfile/lib/downloadFileCommand')
