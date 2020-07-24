@@ -3,7 +3,7 @@
     "cy:open": "cypress open",
     "cy:run": "rimraf mochawesome-report cypress/results mochawesome.json && cypress run",
     "generateReport": "npx mochawesome-merge 'cypress/results/*.json' > mochawesome.json && npx marge mochawesome.json",
-    "cy:run:report" : "npm run cy:run && npm run generateReport"
+    "cy:run:report": "npm run cy:run && npm run generateReport"
   },
   "devDependencies": {
     "cypress-file-upload": "^4.0.7",
